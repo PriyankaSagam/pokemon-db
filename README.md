@@ -43,3 +43,24 @@ GOTCHA! : nodemon will only work if you run it from the same location as your pa
 
 go to localhost:3000
 check that you have your Welcome to the Pokemon App!message displaying
+
+# Set up your 'database'
+You have created a file called pokemon.js
+put the given array in pokemon.js
+Set up your 'database' so that it can be exported to your server.jsand then be required by your server.js
+Set this 'database' to a variable called pokemonin your server.jsfile
+Create a get route /pokemonthat will res.send(pokemon), which will display your pokemon data as json in the browser
+
+# Set up your index view
+
+Instead of displaying json at your /pokemonroute, you should serve the Index.jsxfile you created that will display your pokemon
+You will have to set up your jsx file
+
+Start with your html boilerplate code
+Add an <h1>that describes this page, i.e. 'See All The Pokemon!'
+Try adding some inline styles:
+We can add inline CSS, which are specified as attributes and are passed to the elements. These are specified as an object with a key as camelCased style name & value being the actual style value (and not as a string).
+
+Change your /pokemonroute to res.renderyour Index.jsxfile
+In your browser, go to localhost:3000/pokemonand be sure to see your Index.jsxview with an h1tag
+
