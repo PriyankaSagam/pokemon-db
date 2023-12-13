@@ -64,3 +64,10 @@ We can add inline CSS, which are specified as attributes and are passed to the e
 Change your /pokemonroute to res.renderyour Index.jsxfile
 In your browser, go to localhost:3000/pokemonand be sure to see your Index.jsxview with an h1tag
 
+# Set up your index view to show your pokemon data
+
+Continue working on your Index.jsxview so that you can see:
+
+The name of each pokemon, as a list item, inside an unordered list
+This list should be dynamically rendered by jsx based on your data from your 'database'
+You'll notice the pokemon names aren't properly capitalized! Let's fix that! Manipulate the data programatically to capitalize the first letter of their names
