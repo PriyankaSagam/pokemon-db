@@ -78,3 +78,10 @@ Inside your server.js, add a new get route /pokemon/:id
 That will res.send(req.params.id);
 So, when you go to localhost:3000/pokemon/whatever
 whateverwill show up in the browser
+
+# Link your Index.jsxto your Show.jsx
+
+Inside your Index.jsx,
+
+For each pokemon, add an <a>tag that will have an hrefthat goes to the route /pokemon/x, where x is the array position of the pokemonin the data array. This should be set dynamically with jsx
+When you click the link you should go to your show route and the index number corresponding to the pokemon's array position should be displayed
