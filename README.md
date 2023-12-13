@@ -71,3 +71,10 @@ Continue working on your Index.jsxview so that you can see:
 The name of each pokemon, as a list item, inside an unordered list
 This list should be dynamically rendered by jsx based on your data from your 'database'
 You'll notice the pokemon names aren't properly capitalized! Let's fix that! Manipulate the data programatically to capitalize the first letter of their names
+
+# Setting up your show route
+
+Inside your server.js, add a new get route /pokemon/:id
+That will res.send(req.params.id);
+So, when you go to localhost:3000/pokemon/whatever
+whateverwill show up in the browser
