@@ -85,3 +85,14 @@ Inside your Index.jsx,
 
 For each pokemon, add an <a>tag that will have an hrefthat goes to the route /pokemon/x, where x is the array position of the pokemonin the data array. This should be set dynamically with jsx
 When you click the link you should go to your show route and the index number corresponding to the pokemon's array position should be displayed
+
+# Render your individual pokemon in the show view
+
+Copy/paste your code from your Index.jsxinto your Sshow.jsx`
+Change all your html code inside your Show.jsxfile so that
+
+Your h1 tag says "Gotta Catch 'Em All"
+Add an h2 tag that will display the name of the pokemon
+Add an image tag that will display an image of the pokemon
+Add an anchor tag with the text of back, that will take you back to your Index.jsxview
+Update the route in the server.js to render the show view with the pokemon data

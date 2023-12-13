@@ -5,8 +5,10 @@ class Show extends React.Component{
         const poke = this.props.poke;
         return (
             <div>
-                <h1>Show Page</h1>
-              
+                <h1>Gotta Catch 'Em All</h1>
+                <h2>{poke.name}</h2>
+                <img src={poke.img} />
+                <a href={'/pokemon'} >back </a> 
             </div>
         )
     }
