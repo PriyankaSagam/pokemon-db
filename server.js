@@ -58,18 +58,7 @@ app.get('/pokemon/:id', async(req, res) => {
 
 })
 
-// // S - SHOW - show route displays details of an individual fruit
-// app.get('/fruits/:id', async (req, res) => {
-    
-//     // res.send(fruits[req.params.indexOfFruitsArray]);
-//     try { 
-//         const foundFruit = await Fruit.findById(req.params.id)
-//         res.render('Show',{fruit:foundFruit})
-//     } catch (err) {
-//         res.status(400).send(err);
-//     }
-   
-// })
+
 
 app.listen(3000, () => {
     console.log('listening');
