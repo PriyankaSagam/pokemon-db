@@ -57,7 +57,7 @@ Instead of displaying json at your /pokemonroute, you should serve the Index.jsx
 You will have to set up your jsx file
 
 Start with your html boilerplate code
-Add an <h1>that describes this page, i.e. 'See All The Pokemon!'
+Add an h1 tag that describes this page, i.e. 'See All The Pokemon!'
 Try adding some inline styles:
 We can add inline CSS, which are specified as attributes and are passed to the elements. These are specified as an object with a key as camelCased style name & value being the actual style value (and not as a string).
 
@@ -83,7 +83,7 @@ whateverwill show up in the browser
 
 Inside your Index.jsx,
 
-For each pokemon, add an <a>tag that will have an hrefthat goes to the route /pokemon/x, where x is the array position of the pokemonin the data array. This should be set dynamically with jsx
+For each pokemon, add an a tag that will have an hrefthat goes to the route /pokemon/x, where x is the array position of the pokemonin the data array. This should be set dynamically with jsx
 When you click the link you should go to your show route and the index number corresponding to the pokemon's array position should be displayed
 
 # Render your individual pokemon in the show view
@@ -96,3 +96,29 @@ Add an h2 tag that will display the name of the pokemon
 Add an image tag that will display an image of the pokemon
 Add an anchor tag with the text of back, that will take you back to your Index.jsxview
 Update the route in the server.js to render the show view with the pokemon data
+
+
+# localhost:3000  & localhost:3000/pokemon
+
+# Part 2 with Pokedex
+Add Model for pokemon
+Rewrite Index Route to use Mongodb
+Rewrite Index View to work with Index Route
+Rewrite Show Route to MongoDB
+Rewrite Create Route to work with MongoDB
+Use New Page to create all the pokemon that were in the original array at minimum
+
+# The User Stories
+When a user goes to the /pokemonroute they will see an indexof pokemon: the names of each pokemon rendered to the page.
+When a user clicks on the name of the pokemon, they will be taken to that pokemon's showpage, and will see the pokemon's name and image.
+When a user goes to /pokemon/newa user sees a form that allows them to create a brand new pokemon, and then redirects the user back to /poke
+
+npm i dotenv
+touch .env
+.gitignore => node_modules
+                .env
+ npm i mongoose    
+ cd models
+ touch poke.js
+ cd ..
+            

@@ -7,7 +7,7 @@ const myStyle = {
 
 class Index extends React.Component {
     render() {
-        const { pokemon } = this.props
+        const { pokemon} = this.props
             return(
                <div style={myStyle}>
                     <h1>See All The Pokemon!</h1>
@@ -17,7 +17,7 @@ class Index extends React.Component {
                             return (
                                 <li key = {poke.name}>
                                     <a href={`/pokemon/${i}`} >
-                                      {poke.name}
+                                      {poke.name.charAt(0).toUpperCase()+poke.name.slice(1)}
                                     </a>  {' '}
                                     is <img src = {poke.img} />
                                 </li>

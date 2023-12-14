@@ -6,7 +6,7 @@ class Show extends React.Component{
         return (
             <div>
                 <h1>Gotta Catch 'Em All</h1>
-                <h2>{poke.name}</h2>
+                {poke.name.charAt(0).toUpperCase()+poke.name.slice(1)}
                 <img src={poke.img} />
                 <a href={'/pokemon'} >back </a> 
             </div>
