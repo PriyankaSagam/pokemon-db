@@ -5,24 +5,24 @@ In terminal:
 
 inside your homework folder:
 
-mkdir pokemon_app
-cd pokemon_app
-mkdir views
-touch views/Index.jsx
-touch views/Show.jsx
-mkdir models
-touch models/pokemon.js
-touch server.js
-touch .gitignore
-npm init -y
+mkdir pokemon_app,
+cd pokemon_app,
+mkdir views,
+touch views/Index.jsx,
+touch views/Show.jsx,
+mkdir models,
+touch models/pokemon.js,
+touch server.js,
+touch .gitignore,
+npm init -y,
 
 # Install NPM packages
 In terminal:
 
-Make sure that you are on the same directory level as your package.json(why?)
-npm i express
-npm i jsx-view-engine react react-dom
-check your package.json
+Make sure that you are on the same directory level as your package.json(why?),
+npm i express,
+npm i jsx-view-engine react react-dom,
+check your package.json,
 
 
 # Set up your server
@@ -113,12 +113,23 @@ When a user goes to the /pokemonroute they will see an indexof pokemon: the name
 When a user clicks on the name of the pokemon, they will be taken to that pokemon's showpage, and will see the pokemon's name and image.
 When a user goes to /pokemon/newa user sees a form that allows them to create a brand new pokemon, and then redirects the user back to /poke
 
-npm i dotenv
-touch .env
-.gitignore => node_modules
-                .env
- npm i mongoose    
- cd models
- touch poke.js
- cd ..
+npm i dotenv,
+touch .env,
+.gitignore => node_modules,
+                .env,
+ npm i mongoose,    
+ cd modelsx,
+ touch poke.js,
+ cd ..,
+touch views/Edit.jsx,
+touch views/New.jsx,
+npm i method-override,
+
+# in serverjs
+
+after Index,Show,write code for Delete,Create,Edit and Update...
+In poke.js--------write Schema
+
+
+
             
