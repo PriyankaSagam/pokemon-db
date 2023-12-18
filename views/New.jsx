@@ -3,7 +3,7 @@ const imgsize = {
   width: "200px",
   height: "200px",
 };
-const pokenum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22,23,24,25];
+const pokeNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22,23,24,25];
 
 class New extends React.Component {
   render() {
@@ -16,21 +16,21 @@ class New extends React.Component {
           <br />
           choose Image:
           <br />
-          {pokenum.map((num, index) => {
+          {pokeNum.map((num, index) => {
             return (
               <label key={index}>
                 <input
                   type="radio"
                   name="img"
                   value={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
-                    pokenum[num - 1]
+                    pokeNum[num - 1]
                   }.png`}
                 />
                 <img
                   key={index}
                   style={imgsize}
                   src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
-                    pokenum[num - 1]
+                    pokeNum[num - 1]
                   }.png`}
                 />
               </label>
