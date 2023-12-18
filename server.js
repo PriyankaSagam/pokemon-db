@@ -115,7 +115,7 @@ app.get('/pokemon/:id/edit', async (req, res) => {
 
 
 //Show
-app.get('/pokemon/:id', async(req, res) => {
+app.get('/pokemon/:id',async (req, res) => {
      //res.send(pokemon[req.params.id]);
     // res.render('Show', { poke: pokemon[req.params.id] } )
     try {
